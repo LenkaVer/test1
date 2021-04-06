@@ -1,0 +1,151 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+/*
+	BARVY
+	sede pozadi      #e5e5e5
+	svetle fialova   #48418e
+	tmave fialova    #25133d
+
+	POUZITE PISMO
+	Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+	https://fonts.google.com/specimen/Roboto
+	Písmo už je v HTML nalinkované a v CSS nastavené pro body.
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.obal {
+  /* obsah stránky je omezený do pruhu širokého 960px */
+  width: 960px;
+
+  /* pruh je na stránce vycentrovaný */
+  margin: 0 auto;
+
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+.hlavicka ul {
+  margin: 0;
+}
+
+.hlavicka li {
+  display: inline-block;
+  list-style: none;
+  color: #25133d;
+}
+
+.hlavicka a {
+  text-decoration: none;
+  display: inline-block;
+  color: #25133d;
+  padding: 20px;
+}
+
+.hlavicka a:hover {
+  background-color: #48418e;
+  color: white;
+}
+
+.superappka {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  min-height: 450px;
+  margin: 0 0 20px 0;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  background-image: url(images/pozadi.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.banner h1 {
+  font-size: 90px;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+  font-size: 36px;
+  font-weight: 300;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.banner img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.banner a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.akce {
+  display: flex;
+}
+
+.banner a:hover {
+  background-color: #48418e;
+  letter-spacing: 0.5px;
+}
+
+.main {
+  display: flex;
+  margin: 30px;
+  text-align: center;
+}
+
+.letadlo,
+.bubliny,
+.mapa {
+  margin: 30px;
+}
+
+.main img {
+  width: 60px;
+}
+
+.main h2 {
+  color: #48418e;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.paticka {
+  background-color: #48418e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
